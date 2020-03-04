@@ -2,7 +2,7 @@
 
 ex1 =() =>{
 
-    //Define Varibles
+    //Define Variables
     let clickChecker = document.getElementById("clickCheck");
     let clickLabel = document.getElementById("clickCheckLabel");
     
@@ -20,14 +20,14 @@ ex1 =() =>{
 
 ex2 = () =>{
 
-    //Define Varibles
-    let postLabel = document.getElementById("postTextLabel");
+    //Define Variables
+    let postLabel = document.getElementById("postTextLabel"); // looks like you don't need this element, so delete it
     let postArea = document.getElementById("textPost");
     let postBtn = document.getElementById("typeBtn");
     let hiddenText = document.getElementById("startTyping");
 
 
-    //A few debugging statments
+    //A few debugging statements
     /*
     console.log(postLabel);
     console.log(postArea);
@@ -39,26 +39,26 @@ ex2 = () =>{
         if(hiddenText.hasAttribute('hidden')){
             hiddenText.removeAttribute('hidden')
             postArea.removeAttribute('disabled');
+            // button text should change
         }
         //Hiding message and disabling textfield
         else
         {
             hiddenText.setAttribute('hidden',true);
             postArea.setAttribute('disabled',true);
+            // button text should change
         }
         //Stop it from refreshing
         event.preventDefault();
     })
 }
 ex3 =() =>{
-    //Define Varibles
+    //Define Variables
     let countDown = document.getElementById("startCountdown");
     let countBtn = document.getElementById("counter");
 
     
 }
-
-
 
 main =() =>{
 // ex1();
